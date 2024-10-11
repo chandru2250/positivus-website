@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
+  p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+.nav_logo {
+  h4,
+  ul {
+    margin: 0px;
+  }
+}
+.nav_menu--link {
+  list-style: none;
+  column-gap: 20px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+.nav_menu--links button {
+  background-color: #fff;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.header--Text {
+  h2 {
+    font-size: 60px;
+  }
+}
+.btn-1 {
+  background-color: #191a23;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.header--Img {
+  img {
+    width: 100%;
+  }
+}
+.carousel-primary img {
+  padding: 0px 20px;
+}
+.carousel-primary2 img {
+  padding: 0px 20px;
+}
+.title {
+  column-gap: 25px;
+  p {
+    margin: 0% !important;
+  }
+}
+.main_title {
+  h2 {
+    background-color: #b9ff66;
+  }
+}
+.cards {
+  gap: 15px;
+}
+.card_detailsd {
+  width: 49%;
+}
+.card {
+  border-color: black;
+  border-width: 1px 1px 5px 1px;
+  border-radius: 25px;
+}
+.card_details-1 {
+  background-color: #f3f3f3;
+}
+.card_details-2 {
+  background-color: #b9ff66;
+}
+.card_details-3 {
+  background-color: #191a23;
+}
+.card_details--Text1 {
+  p2 {
+    background-color: #b9ff66;
+  }
+}
+.card_details--Text2 {
+  p2 {
+    background-color: #ffffff;
+  }
+}
+.card_details--Img img {
+  width: 100%;
+}
+.paragraph {
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 5px;
+  width: fit-content !important;
+}
+.card_details--btn {
+  column-gap: 10px;
+}
+.card_details--btn1 {
+  i {
+    background-color: #000;
+    color: #b9ff66;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  p1 {
+    color: #000;
+  }
+}
+.card_details--btn2 {
+  i {
+    background-color: #ffffff;
+    color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  p1 {
+    color: #fff;
+  }
+}
+.card_detail--data {
+  background-color: #f3f3f3;
+}
+.card_data-Img img {
+  width: 80%;
+}
+.card_learn {
+  background-color: #191a23;
+  border-radius: 35px;
+  color: #fff;
+  p1 {
+    color: #b9ff66;
+  }
+}
+/* .learn-data {
+  background-color: #2d3794;
+  width: 100%;
+  border-color: #e90000;
+  border-width: 11px 1px;
+} */
+.card_more-btn {
+  column-gap: 10px;
+}
+.card_details-btn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+#more {
+  display: none;
+  position: relative;
+  left: -25%;
+}
+.card_details .card {
+  background-color: #f3f3f3;
+}
+.card_detail-title {
+  position: relative;
+  gap: 25px;
+  width: 100%;
+  p1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+/* .card_details-btn button i{
+  height: 28%;
+  width: 20%;
+  border-radius: 50%;
+} */
+/* #myBtn button {
+  height: 36px;
+  width: 37px;
+  border-radius: 50%;
+} */
+.Ilink-details--Img{
+  gap: 20px;
+}
+.card_Ilink {
+  padding: 0px 20px;
+  gap: 22px;
+}
+.card_Ilink-details {
+  width: 32%;
+  p {
+    margin: 0%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  p1 {
+    margin: 0%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  img{
+    width: 80px;
+  }
+  i{
+    color: #B9FF66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 768px) {
+  /* #menuBtn{
+        display:block;
+    } */
+  body {
+    p {
+      font-size: 10px;
+    }
+  }
+  .nav_menu--links ul {
+    display: none;
+  }
+  .RqBtn {
+    display: none;
+  }
+  .nav_menu--links .showmenu {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    padding: 10px 30px;
+    top: 65px;
+    right: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #00000059;
+  }
+  .nav_menu--links ul li a {
+    display: block;
+    padding: 10px 0px;
+  }
+  .nav_menu--links ul li i {
+    display: none;
+  }
+  .header--Text {
+    img {
+      width: 100%;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .header--Text button {
+    width: 100%;
+  }
+  .header--Img {
+    display: none;
+  }
+  /*  hvhjn*/
+  .scroll-container {
+    height: 65px;
+  }
+  .carousel-primary {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 20s linear infinite;
+  }
+  .carousel-primary img {
+    width: 100%;
+  }
+  @keyframes scroll-horizontal {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+  @keyframes scroll-horizontal2 {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  .carousel-primary2 {
+    position: absolute;
+    top: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .carousel-primary2 img {
+    width: 100%;
+  }
+  .carousel-primary2 {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal2 20s linear infinite;
+  }
+  .bottom_animation {
+    position: relative;
+  }
+  /* hcv */
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .cards {
+    padding: 0px 15px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card_details--btn {
+    p1 {
+      display: none;
+    }
+  }
+  .card_detail--data {
+    padding: 0px 12px;
+    border-radius: 10px;
+  }
+  .card_data-Img img {
+    display: none;
+  }
+  .card-padding {
+    padding: 0px 15px;
+  }
+  .card_data-Text button {
+    width: 100%;
+  }
+  .card_learn {
+    background-color: #fff;
+  }
+  .card_learn-data {
+    background-color: #191a23;
+    border-radius: 25px;
+    padding: 20px;
+    color: #fff;
+  }
+  .learn-data {
+    background-color: transparent;
+    width: 100%;
+    border-color: #e90000;
+    border-width: 11px 1px;
+  }
+  .scroll_data {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 10px;
+  }
+}
