@@ -51,7 +51,6 @@ body {
   font-size: 12px;
   font-weight: 200;
 }
-
 .header--Img {
   img {
     width: 100%;
@@ -97,11 +96,15 @@ body {
 .card_details--Text1 {
   p2 {
     background-color: #b9ff66;
+    padding: 0px 5px;
+    border-radius: 5px;
   }
 }
 .card_details--Text2 {
   p2 {
     background-color: #ffffff;
+    padding: 0px 5px;
+    border-radius: 5px;
   }
 }
 .card_details--Img img {
@@ -173,6 +176,25 @@ body {
   align-items: flex-start;
   flex-direction: row-reverse;
 }
+.card_details-btn button {
+  border: #000000 solid 1px;
+  display: flex;
+  align-items: center;
+  padding: 50%;
+  border-radius: 50%;
+}
+
+.mores {
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.card_title--text {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 #more {
   display: none;
   position: relative;
@@ -181,6 +203,7 @@ body {
 .card_details .card {
   background-color: #f3f3f3;
 }
+
 .card_detail-title {
   position: relative;
   gap: 25px;
@@ -188,6 +211,9 @@ body {
   p1 {
     font-size: 20px;
     font-weight: 700;
+  }
+  h2 {
+    margin: 0%;
   }
 }
 /* .card_details-btn button i{
@@ -286,15 +312,59 @@ body {
   background-color: #f3f3f3;
   border-radius: 30px;
   img {
-    width: 100%;
+    width: 80%;
   }
 }
-.card_form--text input {
-  border-radius: 15px;
+.card_form--text {
+  gap: 20px;
+}
+.card_form--text :focus{
+  outline: none;
+}
+.input-group .error{
+  color: #e90000;
+}
+.card_form--text .success{
+  border: 2px solid;
+  border-color: #b9ff66;
+}
+
+.form_input{
+  border: 1px solid #000000;
+  border-radius: 10px !important;
+    padding: 5px 20px;
+  
 }
 .card_form-radio {
   display: flex;
   gap: 40px;
+  accent-color: #b9ff66;
+  input[type='radio']{
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        outline: none;
+        border: 1px solid gray;
+    }
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+
+ input[type="radio"]:checked:before {
+        background:#b9ff66;
+        
+    }
+    
+    input[type="radio"]:checked {
+      border-color:rgb(0, 0, 0);
+    }
 }
 .card_form--text .Message {
   height: 100%;
@@ -353,6 +423,18 @@ body {
   display: flex;
   gap: 40px;
 }
+.nav_menu--linke {
+  gap: 20px;
+  list-style: none;
+}
+/* .nav_menu--linke li a {
+  text-decoration: none;
+} */
+
+.carousel-color {
+  color: #000;
+}
+
 /* mobile responsive */
 @media only screen and (max-width: 768px) {
   /* #menuBtn{
@@ -411,6 +493,8 @@ body {
     position: absolute;
     top: 0%;
     left: -100%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
@@ -420,7 +504,7 @@ body {
   .carousel-primary img {
     width: 100%;
   }
-  /* @keyframes scroll-horizontal {
+  @keyframes scroll-horizontal {
     0% {
       left: 100%;
     }
@@ -436,7 +520,7 @@ body {
     100% {
       left: 100%;
     }
-  } */
+  }
   .carousel-primary2 {
     position: absolute;
     top: 90%;
@@ -448,6 +532,8 @@ body {
   }
   .carousel-primary2 {
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: space-around;
     animation: scroll-horizontal2 20s linear infinite;
   }
@@ -515,7 +601,7 @@ body {
   .nav_logos {
     flex-direction: column;
   }
-  .card_footer--contact{
+  .card_footer--contact {
     text-align: center;
   }
   .nav_menu--linke {
@@ -527,14 +613,39 @@ body {
       color: #ffffff;
     }
   }
+  .nav_menu--linke {
+    gap: 0px;
+  }
+  .nav_app {
+    display: none;
+  }
+  .nav_apps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav_apps i {
+    font-size: 25px;
+    color: #ffffff;
+  }
+  .card_footer--mail {
+    input {
+      padding: 14px 0px 14px 19px;
+    }
+  }
   .card_footer--details {
     flex-direction: column;
   }
   .card_footer--mail {
     flex-direction: column;
   }
-  .card_footer-right{
+  .card_footer-right {
     flex-direction: column;
     text-align: center;
+  }
+  .card_footer--contact {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
 }
